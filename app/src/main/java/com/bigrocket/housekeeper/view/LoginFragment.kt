@@ -52,7 +52,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 Toast.makeText(
                     requireContext(),
                     "Erro ao validar login! Verifique seu email e senha e tente novamente.",
-                    Toast.LENGTH_LONG)
+                    Toast.LENGTH_LONG).show()
             }
         }
     }

@@ -45,7 +45,7 @@ class ScheduleFragment : Fragment(R.layout.fragment_schedule) {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        val dpd = DatePickerDialog(requireContext(), { _, _, _, _ ->
+        val dpd = DatePickerDialog(requireContext(), { _, year, month, day ->
             val dateFormatter = SimpleDateFormat("dd/MM/YYYY")
             val dateFormatted = dateFormatter.format(c.time)
 
