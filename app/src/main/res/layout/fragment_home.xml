@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeFragment">
+
+    <ImageButton
+        android:id="@+id/imageButtonEasy"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/easy"
+        app:layout_constraintEnd_toEndOf="@id/titlePage"
+        app:layout_constraintStart_toStartOf="@id/titlePage"
+        app:layout_constraintTop_toBottomOf="@+id/titlePage" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMedium"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/medium"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonEasy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonEasy"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonEasy" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHard"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMedium"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMedium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMedium"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/titlePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Escolha seu serviço"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
